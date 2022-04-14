@@ -20,7 +20,7 @@ class CompanyFactory extends Factory
           'name' => $this->faker->company(),
             'slug' => $this->faker->slug(),
             'website' => 'www.fakewebsite.com',
-            'logo' =>'test',
+            'logo' =>'https://i.pravatar.cc/60?u=' . $this->faker->unique()->randomDigit,
             'description' => $this->faker->realText(),
 
         ];
