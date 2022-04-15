@@ -37,7 +37,7 @@
     @endauth
     <div  class="font-extrabold items-end flex mb-3 flex-grow" x-data="{ open: false }">
         <button  class="ml-4 mt-4 bg-blue-600 h-8 w-20 text-white text-center rounded-xl  " x-on:click="open = ! open"}>Edit</button>
-        <div  x-transition x-show="open"  class="edit-form">
+        <div  x-transition x-show="open" style="display:none" class="edit-form">
             <form class="mx-auto w-1/2 text-center" method="POST" action="/admin/companies/{{$company->id}}" enctype="multipart/form-data">
                 @method('PATCH')
                 @csrf
